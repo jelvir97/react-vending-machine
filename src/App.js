@@ -1,5 +1,6 @@
 import VendingMachine from './VendingMachine';
 import Snack from './Snack';
+import NavBar from './NavBar';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import './App.css';
 
@@ -7,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <NavBar />
         <Routes>
           <Route path="/" element={<VendingMachine />}/>
           <Route path="/chips" element={<Snack name="Chips" />}/>
